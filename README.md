@@ -13,9 +13,6 @@ Welcome to the Google Search App! This Django app provides a simple interface fo
 - **Advanced Search:**
   - Utilize advanced search options to refine your Google searches, including filtering by specific words, phrases, or excluding certain terms.
 
-## Screenshots
-
-*(Consider adding screenshots or GIFs showcasing the user interface of your app.)*
 
 ## Installation
 
