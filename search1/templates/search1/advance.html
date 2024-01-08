@@ -1,0 +1,43 @@
+{% extends 'search1/layout.html' %}
+{% load static %}
+{% block body %}
+<header class="header">
+    <div></div>
+    <div>
+        <a href="{% url 'index' %}"> Google search </a>
+        <a href="{% url 'image' %}"> Google Image </a>
+    </div>
+</header>
+
+<div id="title">
+    <h3> Advance Search </h3>
+</div>
+<hr>
+
+<main>
+    <div class="adv_container">
+        <form action="https://www.google.com/search">
+            <div class="adv">
+                <p> find pages with... </p>
+            </div>
+            <div class="adv">
+                <p class="left"> all the pages with... </p>
+                <input type="text" class="form-control" name="as_q">
+            </div>
+            <div class="adv">
+                <p class="left"> this exact word or phrase... </p>
+                <input type="text" class="form-control" name="as_epq">
+            </div>
+            <div class="adv">
+                <p class="left"> any of these words... </p>
+                <input type="text" class="form-control" name="as_oq">
+            </div>
+            <div class="adv">
+                <p class="left"> none of these words... </p>
+                <input type="text" class="form-control" name="as_eq">
+            </div>
+            <input type="submit" id="submit" value="google search">
+        </form>
+    </div>
+</main>
+{% endblock %}

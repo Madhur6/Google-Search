@@ -1,0 +1,25 @@
+{% extends 'search1/layout.html' %}
+{% load static %}
+{% block body %}
+<header class="header">
+    <div></div>
+    <div>
+        <a href="{% url 'image' %}"> Google Image </a>
+        <a href="{% url 'advance' %}"> Advance Search </a>
+    </div>
+</header>
+<main class="main">
+    <div class="content">
+        <img alt="logo" src="{% static 'search1/media/googlelogo.webp' %}" height="180">
+        <div>
+            <form action="https://www.google.com/search">
+                <input type="text" name="q" id="text" class="form-control" placeholder="search" autofocus autocomplete="off">
+                <div id="search_container">
+                    <input type="submit" id="submit" value="google search">
+                    <input type="submit" id="submit" value="i'm feeling lucky" name="btnI">
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+{% endblock %}
